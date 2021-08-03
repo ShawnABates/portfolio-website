@@ -89,7 +89,9 @@ a:active {
   width: 50%;
 }
 
-
+#about {
+  text-align: center;
+}
 #link {
   text-align: center;
   padding: 20px;
