@@ -1,0 +1,267 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body {
+  background-color: undefined;
+  font-family: 'roboto slab', serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+ * {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+ }
+
+header {border-bottom: 100px none;
+}
+
+
+
+ .page-header {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   width: 100%;
+   padding: 20px;
+   border-bottom-color: #000;
+   border-bottom-style: solid;
+   border-bottom-width: 10px;
+
+ }
+
+ .page-header_item {
+   -webkit-box-flex: 0;
+       -ms-flex: 0 1 200px;
+           flex: 0 1 200px;
+ }
+
+ .page-header_item:last-child {
+   -webkit-box-flex: 1;
+       -ms-flex-positive: 1;
+           flex-grow: 1;
+   text-align: right;
+ }
+
+ .navigation-list {
+   list-style-type: none;
+ }
+
+ .navigation-list li {
+   display: inline-block;
+   margin-left: 15px;
+ }
+
+
+a:visited {
+  /* visited link */
+  color: #B010CE;
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:active {
+  /* selected link */
+  color: red;
+}
+
+.about {
+  text-align: center;
+}
+
+.skills {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ .hometown{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+#link {
+  text-align: center;
+  padding: 20px;
+}
+
+
+button  {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+
+}
+
+
+.button  {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity;
+
+}
+
+
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile_portrait {
+  float: left;
+  width: 250px;
+  max-width: 400px;
+  height: auto;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+/* start grid fallback */
+.grid__item {
+ display: inline-block;
+ width: 33%;
+}
+/* end grid fallback */
+
+ @supports (display: grid) {
+  .grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+   }
+ }
+  .grid__item {
+    background-color: lightgray;
+    width: auto;
+    min-height: auto;
+    margin: 0;
+   }
+
+
+  @-webkit-keyframes color-change {
+      from {
+        fill: #edc655;
+      }
+      to {
+        fill: #f76414;
+        }
+      }
+
+
+  @keyframes color-change {
+      from {
+        fill: #edc655;
+      }
+      to {
+        fill: #f76414;
+        }
+      }
+
+      .sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+            animation: 4s color-change infinite alternate linear;
+      }
+
+
+
+
+/* this is considered a responsive class and usually goes at the end of the file. This particular media is used to adjust content based on smaller screeen size */
+@media all and (max-width: 500px) {
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
