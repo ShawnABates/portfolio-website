@@ -214,6 +214,10 @@ button:focus,
   padding-left: 20px;
 }
 
+.work {
+  padding-left: 20px;
+}
+
 /* end grid fallback */
 
 @supports (display: grid) {
