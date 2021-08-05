@@ -167,6 +167,15 @@ button:focus,
   padding: 10px;
 }
 
+.grid2 {
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+.grid3 {
+  padding-left: 10px;
+}
+
 /* end grid fallback */
 
 @supports (display: grid) {
