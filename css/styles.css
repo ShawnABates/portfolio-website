@@ -153,12 +153,14 @@ button:focus,
 
 .grid {
   display: grid;
+  padding: 10px;
 }
 
 /* start grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
+  padding: 10px;
 }
 
 /* end grid fallback */
