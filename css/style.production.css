@@ -184,8 +184,13 @@ button:focus,
   text-align: center;
 }
 
+.grid3 {
+  padding-left: 10px;
+}
+
 .grid2 {
   padding-top: 30px;
+  padding-left: 10px;
 }
 
 .grid {
