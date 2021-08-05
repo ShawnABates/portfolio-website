@@ -48,16 +48,16 @@
 
 
 <!--need to add action-->
-  <div>
+  <div class="grid2">
     <form action="empty" method="post" id="contact-form">
       <label class="standard-label" for="contact-email">E-mail: *</label>
-      <input type="email" id="contact-email" required>
+      <input type="email" id="contact-email" required><br>
 
       <label class="standard-label" for="contact-tel">Telephone (xxx-xxx-xxxx): </label>
-      <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+      <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br>
 
       <label class="standard-label" for="contact-text">Message: *</label>
-      <textarea maxlength="240" id="contact-text" required></textarea>
+      <textarea maxlength="240" id="contact-text" required></textarea><br>
         <p> (Max length 240 Characters) </p>
       <input type="submit" value="Send message">
         <p> * required fields </p>
