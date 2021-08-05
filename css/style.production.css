@@ -184,6 +184,10 @@ button:focus,
   text-align: center;
 }
 
+.grid2 {
+  padding-top: 30px;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
