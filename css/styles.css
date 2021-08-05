@@ -5,8 +5,8 @@
   --primary-font-size: 18px;
   --visited: #636;
   --active-link: red;
-  --button-primary: #4287f5;
-  --button-text: red;
+  --button-primary: black;
+  --button-text: white;
 }
 
 body {
@@ -124,6 +124,10 @@ button:focus,
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+}
+
+#about_button {
+  color: var(--button-text);
 }
 
 .profile {

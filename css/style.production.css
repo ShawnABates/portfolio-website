@@ -57,7 +57,7 @@ header {
 
 a:visited {
   /* visited link */
-  color: #663366;
+  color: #636;
 }
 
 a:hover,
@@ -104,8 +104,8 @@ button {
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #4287f5;
-  color: red;
+  background-color: black;
+  color: white;
   text-decoration: none;
 
   /* adds spacing to the button (this will be discussed more in-depth later) */
@@ -127,8 +127,8 @@ button {
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #4287f5;
-  color: red;
+  background-color: black;
+  color: white;
   text-decoration: none;
 
   /* adds spacing to the button (this will be discussed more in-depth later) */
@@ -151,6 +151,10 @@ button:focus,
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+}
+
+#about_button {
+  color: white;
 }
 
 .profile {
